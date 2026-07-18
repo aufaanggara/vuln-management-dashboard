@@ -1,0 +1,27 @@
+services:
+  mysql:
+    image: mysql:8.0
+    container_name: vuln-mgmt-mysql
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: aufagans21ugm
+      MYSQL_DATABASE: vuln_mgmt
+      MYSQL_USER: vulnapp
+      MYSQL_PASSWORD: aufagans21
+    ports:
+      - "3306:3306"
+    volumes:
+      - ./mysql-data:/var/lib/mysql
+
+  phpmyadmin:
+    image: phpmyadmin:5.2
+    container_name: vuln-mgmt-phpmyadmin
+    restart: unless-stopped
+    environment:
+      PMA_HOST: mysql
+      PMA_USER: root
+      PMA_PASSWORD: aufagans21ugm
+    ports:
+      - "8081:80"
+    depends_on:
+      - mysql
