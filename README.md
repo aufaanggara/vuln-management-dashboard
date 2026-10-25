@@ -33,7 +33,7 @@ vuln-mgmt-dashboard/
 │   │   ├── 01-backend/
 │   │   └── 02-frontend/
 │   └── notes/
-├── WRITEUP/
+├── writeups/
 │   └── 01-setup-environment.md
 │   └── 02-backend-laravel.md
 │   └── 03-rest-api.md
