@@ -33,7 +33,16 @@ vuln-mgmt-dashboard/
 │   │   ├── 01-backend/
 │   │   └── 02-frontend/
 │   └── notes/
-├── WRITEUP.md
+├── WRITEUP/
+│   └── 01-setup-environment.md
+│   └── 02-backend-laravel.md
+│   └── 03-rest-api.md
+│   └── 04-frontend-dashboard.md
+│   └── 05-autentikasi.md
+│   └── 06-remediation-chart-data-contoh.md
+│   └── 07-export-pdf.md
+│   └── 08-keamanan-dan-penutup.md
+│   └── README.md
 └── README.md
 ```
 

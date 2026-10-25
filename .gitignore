@@ -1,2 +1,3 @@
 docker/mysql-data/
 .git-backup/
+snapshot/
